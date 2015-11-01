@@ -1,0 +1,10 @@
+body { padding-top:30px; }
+
+.jumbotronbg {
+    position: relative;
+    background: #000 url("../img/lock-and-stock-photos.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>Starter Node and Angular</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+	<link rel="stylesheet" href="css/theme.min.css"> <!-- custom styles -->
+	<link rel="stylesheet" href="libs/components-font-awesome/css/font-awesome.min.css"> <!-- custom styles -->
+	<link rel="stylesheet" href="css/style.min.css"> <!-- custom styles -->
+
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/controllers/NerdCtrl.js"></script>
+	<script src="js/services/NerdService.js"></script>
+	<script src="js/controllers/GeekCtrl.js"></script>
+	<script src="js/services/GeekService.js"></script>
+	<script src="js/appRoutes.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-app="sampleApp" ng-controller="NerdController">
+<div class="container">
+
+	<!-- HEADER -->
+
+	<div class="wrapper">
+			 <nav class="navbar navbar-default navbar-fixed-top">
+		 <div class="container-fluid">
+				 <div class="navbar-header">
+						 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+										 data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								 <span class="sr-only">Toggle navigation</span>
+								 <span class="icon-bar"></span>
+								 <span class="icon-bar"></span>
+								 <span class="icon-bar"></span>
+						 </button>
+						 <a class="navbar-brand" href="/dashboard">
+								 <img id="logo" src="img/buildingradar_logo_red_compact_xs.png">
+						 </a>
+				 </div>
+
+
+
+
+
+
+
+
+
+
+				 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+
+								 <ul class="nav navbar-nav navbar-right">
+
+
+
+										 <li  class="active" ><a href="/mpd-team">The mostly awesome MPD-Team</a>
+										 </li>
+
+										 <li ><a href="/search/projects">Search</a>
+										 </li>
+
+										 <li ><a href="/favorite_projects">Ratings</a>
+										 </li>
+
+										 <li ><a href="/articles">Profiles</a>
+										 </li>
+
+
+										 <li role="presentation" class="dropdown notfication-dropdown ">
+												 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+														aria-expanded="false">
+														 <i class="fa fa-bell fa-lg"></i>
+												 </a>
+												 <ul class="dropdown-menu col-md-4 notifications">
+
+														 <li class="empty-message">
+																 <div>No new notifications</div>
+														 </li>
+
+												 </ul>
+										 </li>
+
+
+
+										 <li role="presentation" class="dropdown">
+												 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+														aria-expanded="false">MPD Team<span
+																 class="caret"></span></a>
+												 <ul class="dropdown-menu">
+														 <li><a href="/profile">Show profile</a></li>
+														 <li><a href="/logout">Logout</a></li>
+												 </ul>
+										 </li>
+
+
+
+
+
+
+								 </ul>
+
+
+
+				 </div>
+				 <!-- /.navbar-collapse -->
+		 </div>
+		</nav>
+
+	<!-- ANGULAR DYNAMIC CONTENT -->
+	<div ng-view></div>
+	
+
+</div>
+</body>
+</html>
